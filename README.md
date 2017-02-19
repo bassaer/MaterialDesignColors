@@ -1,2 +1,4 @@
 # MaterialDesignColors
-An Android library which provides Google Material Design Colors
+Android library which provides [Google Material Design Colors](https://material.io/guidelines/style/color.html)
+
+

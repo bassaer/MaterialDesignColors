@@ -1,7 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="wrap_content">
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/table_row_14_50"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/v_50"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/table_row_14_100"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/v_100"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/table_row_14_200"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/v_200"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/table_row_14_300"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/v_300"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/table_row_14_400"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/v_400"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/table_row_14_500"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/v_500"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/table_row_14_600"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/v_600"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/table_row_14_700"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/v_700"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/table_row_14_800"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/v_800"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/table_row_14_900"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/v_900"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/table_row_14_a_100"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/a_100"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/table_row_14_a_200"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/a_200"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/table_row_14_a_400"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/a_400"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/table_row_14_a_700"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/a_700"
+        android:textColor="@android:color/white"/>
+
+</TableRow>

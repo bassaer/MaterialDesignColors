@@ -1,1 +1,1 @@
-include ':app', ':materialdesigncolorlib'
+include ':app', ':library'

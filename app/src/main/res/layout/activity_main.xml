@@ -10,9 +10,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.github.bassaer.materialdesigncolors.MainActivity">
 
-    <TextView
-        android:id="@+id/text_view"
+    <!--<ListView-->
+        <!--android:id="@+id/list_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+    <TableLayout
+        android:id="@+id/table_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello World!"/>
+        android:layout_height="match_parent"/>
+
 </RelativeLayout>

@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">MaterialDesignColors</string>
+
+    <!-- Color Label -->
+    <string name="red">Red</string>
+    <string name="pink">Pink</string>
+    <string name="purple">Purple</string>
+    <string name="deep_purple">Deep Purple</string>
+    <string name="indigo">Indigo</string>
+    <string name="blue">Blue</string>
+    <string name="light_blue">Light Blue</string>
+    <string name="cyan">Cyan</string>
+    <string name="teal">Teal</string>
+    <string name="green">Green</string>
+    <string name="light_green">Light Green</string>
+    <string name="lime">Lime</string>
+    <string name="yellow">Yellow</string>
+    <string name="amber">Amber</string>
+    <string name="orange">Orange</string>
+    <string name="deep_orange">Deep Orange</string>
+    <string name="brown">Brown</string>
+    <string name="grey">Grey</string>
+    <string name="blue_grey">Blue Grey</string>
+    <string name="black">Black</string>
+    <string name="white">White</string>
+
+    <!-- Color value -->
+    <string name="v_50">50</string>
+    <string name="v_100">100</string>
+    <string name="v_200">200</string>
+    <string name="v_300">300</string>
+    <string name="v_400">400</string>
+    <string name="v_500">500</string>
+    <string name="v_600">600</string>
+    <string name="v_700">700</string>
+    <string name="v_800">800</string>
+    <string name="v_900">900</string>
+    <string name="a_100">A\n100</string>
+    <string name="a_200">A\n200</string>
+    <string name="a_400">A\n400</string>
+    <string name="a_700">A\n700</string>
+
 </resources>
