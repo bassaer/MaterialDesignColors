@@ -2,6 +2,9 @@ package com.github.bassaer.materialdesigncolors;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 
 import com.github.bassaer.library.MDColor;
 
@@ -10,10 +13,28 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final int NUM_OF_14_COLORS = 16;
+    public static final int NUM_OF_10_COLORS = 3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TableLayout tableLayout = (TableLayout)findViewById(R.id.table_layout);
+        getLayoutInflater().inflate(R.layout.table_low_14_pallette, tableLayout);
+
+        for (int i = 0; i < NUM_OF_14_COLORS; i++) {
+            TableRow tableRow = (TableRow)tableLayout.getChildAt(i);
+            for (int j = 0; j < 14; j++) {
+                View color50 = findViewById(R.id.table_row_14_50);
+
+            }
+        }
+
+        for (int i = 0; i < NUM_OF_10_COLORS; i++ ) {
+
+        }
 
 
     }
