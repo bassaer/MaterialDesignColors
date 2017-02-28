@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">MaterialDesignColors</string>
+    <string name="color_palette">Color Palette</string>
+    <string name="color_icons">Color Icons</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <!-- Color Label -->
     <string name="red">Red</string>

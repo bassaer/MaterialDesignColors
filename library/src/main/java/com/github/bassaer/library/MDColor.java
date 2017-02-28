@@ -3,6 +3,7 @@ package com.github.bassaer.library;
 import android.support.annotation.ColorInt;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 /**
  * Material Design Color<br>
@@ -291,7 +292,7 @@ public class MDColor {
     public static final HashMap<String, Integer> sMDColorNameMap;
 
     static {
-        sMDColorNameMap = new HashMap<>();
+        sMDColorNameMap = new LinkedHashMap<>();
         sMDColorNameMap.put("red_50", RED_50);
         sMDColorNameMap.put("red_100", RED_100);
         sMDColorNameMap.put("red_200", RED_200);

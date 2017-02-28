@@ -1,63 +1,91 @@
 package com.github.bassaer.materialdesigncolors;
 
+import android.app.FragmentTransaction;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.TableLayout;
-import android.widget.TableRow;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 
-import com.github.bassaer.library.MDColor;
 
-import java.util.ArrayList;
-import java.util.List;
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-public class MainActivity extends AppCompatActivity {
-
-    public static final int NUM_OF_14_COLORS = 16;
-    public static final int NUM_OF_10_COLORS = 3;
+    private ActionBarDrawerToggle mDrawerToggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TableLayout tableLayout = (TableLayout)findViewById(R.id.table_layout);
-        getLayoutInflater().inflate(R.layout.table_low_14_pallette, tableLayout);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        for (int i = 0; i < NUM_OF_14_COLORS; i++) {
-            TableRow tableRow = (TableRow)tableLayout.getChildAt(i);
-            for (int j = 0; j < 14; j++) {
-                View color50 = findViewById(R.id.table_row_14_50);
+        DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawerToggle = new ActionBarDrawerToggle(
+                this, drawerLayout, R.string.navigation_drawer_open, R.string.navigation_drawer_close
+        );
 
-            }
-        }
+        mDrawerToggle.setDrawerIndicatorEnabled(true);
+        drawerLayout.addDrawerListener(mDrawerToggle);
 
-        for (int i = 0; i < NUM_OF_10_COLORS; i++ ) {
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
-        }
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_container, new ColorPaletteFragment());
+        transaction.commit();
 
 
     }
 
-    private void setColors(List<ColorEntry> colors) {
-        if (colors == null) {
-            colors = new ArrayList<>();
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        mDrawerToggle.syncState();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        mDrawerToggle.onConfigurationChanged(newConfig);
+    }
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
         }
-        //Red
-        colors.add(new ColorEntry(getString(R.string.red), MDColor.RED_500));
-        colors.add(new ColorEntry(getString(R.string.v_50), MDColor.RED_50));
-        colors.add(new ColorEntry(getString(R.string.v_100), MDColor.RED_100));
-        colors.add(new ColorEntry(getString(R.string.v_200), MDColor.RED_200));
-        colors.add(new ColorEntry(getString(R.string.v_300), MDColor.RED_300));
-        colors.add(new ColorEntry(getString(R.string.v_400), MDColor.RED_400));
-        colors.add(new ColorEntry(getString(R.string.v_500), MDColor.RED_500));
-        colors.add(new ColorEntry(getString(R.string.v_600), MDColor.RED_600));
-        colors.add(new ColorEntry(getString(R.string.v_700), MDColor.RED_700));
-        colors.add(new ColorEntry(getString(R.string.v_800), MDColor.RED_800));
-        colors.add(new ColorEntry(getString(R.string.v_900), MDColor.RED_900));
-        colors.add(new ColorEntry(getString(R.string.a_100), MDColor.RED_A_100));
-        colors.add(new ColorEntry(getString(R.string.a_200), MDColor.RED_A_200));
-        colors.add(new ColorEntry(getString(R.string.a_400), MDColor.RED_A_400));
-        colors.add(new ColorEntry(getString(R.string.a_700), MDColor.RED_A_700));
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        return mDrawerToggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
+    }
+
+
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.nav_palette) {
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.fragment_container, new ColorPaletteFragment());
+            transaction.commit();
+        } else {
+            FragmentTransaction transaction = getFragmentManager().beginTransaction();
+            transaction.replace(R.id.fragment_container, new ColorIconFragment());
+            transaction.commit();
+        }
+        DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
     }
 }
