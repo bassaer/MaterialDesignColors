@@ -118,7 +118,7 @@ uploadArchives {
         mavenDeployer {
             repository url: "file://${repo.absolutePath}"
             pom.version = '1.0.0'
-            pom.groupId = 'com.github.bassaer.materialdesigncolors'
+            pom.groupId = 'com.github.bassaer'
             pom.artifactId = 'materialdesigncolors'
         }
     }
