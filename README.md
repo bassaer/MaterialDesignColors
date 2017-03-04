@@ -1,9 +1,17 @@
 # MaterialDesignColors
+
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-MaterialDesignColors-red.svg?style=flat)](https://android-arsenal.com/details/1/5384)
+[![Download](https://api.bintray.com/packages/tnakayama/MaterialDesignColors/materialdesigncolors/images/download.svg) ](https://bintray.com/tnakayama/MaterialDesignColors/materialdesigncolors/_latestVersion)
+[![API](https://img.shields.io/badge/API-9%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=9)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/bassaer/MaterialDesignColors/blob/master/LICENSE)
+
 Android library which provides [Google Material Design Colors](https://material.io/guidelines/style/color.html)
 
 <img src="https://github.com/bassaer/MaterialDesignColors/blob/develop/images/mdc_screen.png" height="400">
 
 ## Gradle
+
+[![Download](https://api.bintray.com/packages/tnakayama/MaterialDesignColors/materialdesigncolors/images/download.svg) ](https://bintray.com/tnakayama/MaterialDesignColors/materialdesigncolors/_latestVersion)
 
 ```
 dependencies {
