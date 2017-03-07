@@ -66,7 +66,7 @@ Or can be used as color resource for layout file.
     android:tint="@color/cyan_500"/>
 ```
 
-## Licence
+## License
 
 ```
 MIT License
